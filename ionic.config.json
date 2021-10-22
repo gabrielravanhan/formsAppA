@@ -1,0 +1,7 @@
+{
+  "name": "formsAppA",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
