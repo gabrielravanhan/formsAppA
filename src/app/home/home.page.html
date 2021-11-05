@@ -1,38 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title class="ion-text-center">
-      FORMULÁRIO DE CADASTRO
+      Agenda
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" color="light">
-  <div id="container">
-    <ion-item lines="none" color="light">
-      <ion-label position="fixed">Nome</ion-label>
-      <ion-input placeholder="Insira seu nome..." clearInput></ion-input>
-    </ion-item>
-
-    <ion-item lines="none" color="light">
-      <ion-label position="fixed">Sexo</ion-label>
-      <ion-input placeholder="Insira seu sexo..." clearInput></ion-input>
-    </ion-item>
-
-    <ion-item lines="none" color="light">
-      <ion-label position="fixed">Telefone</ion-label>
-      <ion-input placeholder="Insira seu telefone..." clearInput></ion-input>
-    </ion-item>
-
-    <ion-item lines="none" color="light">
-      <ion-label position="fixed">E-mail</ion-label>
-      <ion-input placeholder="Insira seu e-mail..." clearInput></ion-input>
-    </ion-item>
-
-    <ion-item lines="none" color="light">
-      <ion-label position="fixed">Senha</ion-label>
-      <ion-input type="password" placeholder="Insira sua senha..." clearInput></ion-input>
-    </ion-item>
-
-    <ion-button expand="block">Finalizar</ion-button>
-  </div>
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button routerLink="/cadastro">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
