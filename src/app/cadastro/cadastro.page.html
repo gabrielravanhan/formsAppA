@@ -6,41 +6,47 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="light">
+
+  <h1>Pessoas</h1>
+
   <ion-item lines="none" color="light">
     <ion-label position="floating">Nome</ion-label>
-    <ion-input placeholder="Insira seu nome..." clearInput></ion-input>
+    <ion-input placeholder="Insira seu nome..." clearInput [(ngModel)]="usuario.nome"></ion-input>
   </ion-item>
 
   <ion-item lines="none" color="light">
     <ion-label position="floating">CPF</ion-label>
-    <ion-input placeholder="Insira seu CPF..." clearInput></ion-input>
+    <ion-input placeholder="Insira seu CPF..." clearInput [(ngModel)]="usuario.cpf"></ion-input>
   </ion-item>
 
   <ion-item lines="none" color="light">
     <ion-label position="floating">Data de Nascimento</ion-label>
-    <ion-input placeholder="Insira sua data de nascimento..." clearInput></ion-input>
+    <ion-input placeholder="Insira sua data de nascimento..." clearInput [(ngModel)]="usuario.dataNascimento">
+    </ion-input>
   </ion-item>
 
   <ion-item lines="none" color="light">
     <ion-label position="floating">Telefone</ion-label>
-    <ion-input placeholder="Insira seu telefone..." clearInput></ion-input>
+    <ion-input placeholder="Insira seu telefone..." clearInput [(ngModel)]="usuario.telefone"></ion-input>
   </ion-item>
 
   <ion-item lines="none" color="light">
     <ion-label position="floating">E-mail</ion-label>
-    <ion-input placeholder="Insira seu e-mail..." clearInput></ion-input>
+    <ion-input placeholder="Insira seu e-mail..." clearInput [(ngModel)]="usuario.email"></ion-input>
   </ion-item>
 
   <ion-item lines="none" color="light">
     <ion-label position="floating">Senha</ion-label>
-    <ion-input type="password" placeholder="Insira sua senha..." clearInput></ion-input>
+    <ion-input type="password" placeholder="Insira sua senha..." clearInput [(ngModel)]="usuario.senha"></ion-input>
   </ion-item>
 
   <ion-item lines="none" color="light">
     <ion-label position="floating">Confirmar Senha</ion-label>
-    <ion-input type="password" placeholder="Confirme sua senha..."></ion-input>
+    <ion-input type="password" placeholder="Confirme sua senha..." [(ngModel)]="confirmarSenha"></ion-input>
   </ion-item>
+
+  <ion-button color="success" expand="block" (click)="salvar">Salvar</ion-button>
 
   <ion-button expand="block" routerLink="/home">Voltar</ion-button>
 </ion-content>
